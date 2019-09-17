@@ -1,3 +1,4 @@
 # Desafio de QA - Resolução
-1 - [Planning](/desafio-qa/planning/README.md) - Pontos gerais e conceitos de QA.
-2 - [API](/desafio-qa/feature/README.md) - Testes automatizados para API da IDWall, utilizando Cucumber + Ruby + HTTParty
+1 - [Planning](https://github.com/joicequeiroz/desafio-qa/tree/master/planning) - Pontos gerais e conceitos de QA.
+
+2 - [API](https://github.com/joicequeiroz/desafio-qa/tree/master/features) - Testes automatizados para API da IDWall, utilizando Cucumber + Ruby + HTTParty
