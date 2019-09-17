@@ -18,9 +18,32 @@ Após clonar o projeto, vai até o diretório raíz do projeto e execute o segui
 Para rodar todos os cenários, execute o seguinte comando:
     <blockquote>$ cucumbert</blockquote>
 
-Para rodar cenários específicos por funcionalidade, como Relatórios, execute o seguinte comando:
-    <blockquote>$ cucumber --tag @relatorio</blockquote>
+Para rodar cenários específicos por funcionalidade, execute o seguinte comando:
 
+Empresas
+    <blockquote>$ cucumber --tag @empresa</blockquote>
+
+Listar Relatórios
+    <blockquote>$ cucumber --tag @listar</blockquote>
+    
+Matriz
+    <blockquote>$ cucumber --tag @matriz</blockquote>
+    
+Pessoas
+    <blockquote>$ cucumber --tag @pessoas</blockquote>
+    
+Relatórios
+    <blockquote>$ cucumber --tag @relatorio</blockquote>
+    
+Aprovação Manual
+    <blockquote>$ cucumber --tag @manual</blockquote>
+    
+Status
+    <blockquote>$ cucumber --tag @status</blockquote>
+
+Usuário
+    <blockquote>$ cucumber --tag @usuario</blockquote>
+    
 #### Após a execução dos testes, os resultados são armazenados em ..\desafios-qa\log\report.html
 
 ## Pontos de Atenção:
