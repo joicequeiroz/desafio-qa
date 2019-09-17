@@ -26,7 +26,7 @@ Para rodar cenários específicos por funcionalidade, como Relatórios, execute 
 * Após a execução dos testes, os resultados são armazenados em ..\desafios-qa\log\report.html
 
 ## Pontos de Atenção:
-* 1 - Status Code:
+1 - Status Code:
 Os códigos de status das respostas HTTP indicam se uma requisição HTTP foi corretamente concluída. As respostas são agrupadas em cinco classes: respostas de informações, respostas de sucesso, redirecionamento, erro do cliente e erros do servidor.
 
 Idealmente o status code 200 é utilizado para:
@@ -43,7 +43,7 @@ Quando não há conteúdo para enviar para esta solicitação, mas os cabeçalho
 
 No caso de cenários onde não é informado um dos campos obrigatórios, o ideal é o retorno do status 204 e não o status 400 - Bad Request, que significa que o servidor não entendeu a requisição pois está com uma sintaxe inválida.
 
-* 2- Documentação:
+2- Documentação:
 De acordo com a documentação disponível em: https://docs.idwall.co/docs/listing-reports, é possível filtrar relatórios informando os dados no body na requisição, como por exemplo:
 curl -G https://api-v2.idwall.co/relatorios
 -H "Content-Type: application/x-www-form-urlencoded"
@@ -59,7 +59,7 @@ curl -G https://api-v2.idwall.co/relatorios?page=1&rows=25&tipo_pessoa=Pessoa
 
 ## Registro de defeitos
 Caso de Teste | Resultado esperado | Resultado obtido | Severidade
---------- 	  | ------
+------------- | ------------------ |----------------- |------------
 POST para validar a aprovacao manual sem o parametro| Sistema deve retornar o status_code 400 e a mensagem "Bad Request"| O sistema retornou o status code 404 e a mensagem "Not Found| Normal
 GET para listar relatórios por Nome Matriz Pessoa| Sistema deve retornar todas as matrizes correspontente à "consultaPessoaDefault"| O sistema retorno a consulta vazia, analisando o problema, o campo nome está trocado com o campo "título", filtrando por ""Relatório padrão PF" o sistema retorna todas as matrizes de Pessoa| Normal
 GET para listar relatórios por Nome Matriz Empresa| Sistema deve retornar todas as matrizes correspontente à "consultaEmpresaDefault"| O sistema retorno a consulta vazia, analisando o problema, o campo nome está trocado com o campo "título", filtrando por ""Relatório padrão PJ" o sistema retorna todas as matrizes de Pessoa| Normal
