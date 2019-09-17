@@ -68,3 +68,10 @@ Finalmente, deve ser capaz de realizar todos os pontos descritos acima de forma 
 ## Conclusão
 Todos somos responsáveis pela qualidade e sucesso de um produto e a comunicação é essencial durante esse processo. É preciso deixar muito claro as expectativas e o como vamos fazer para alcançá-los. 
 Tendo em vista que, a qualidade precisa ser mensurada e devemos atuar no gaps e controlar os riscos levantados antes e durante o ciclo de vida do desenvolvimento.
+
+##### Referências
+###### - BDD como uma metodologia àgil - Fonte: https://dtidigital.com.br/blog/bdd-como-metodologia-agil/
+###### - Teste ágil, como implementar - Fonte: http://www.eliasnogueira.com/o-mundo-de-teste-de-software/capitulo-7-teste-agil-como-implementar/
+###### - Automação de Testes - Fonte: https://www.devmedia.com.br/automacao-de-testes/10249
+###### - Cinco métricas para avaliar a qualidade de seus softwares - Fonte: https://computerworld.com.br/2015/09/09/cinco-metricas-para-avaliar-qualidade-de-seus-softwares/
+
