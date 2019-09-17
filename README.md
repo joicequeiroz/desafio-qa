@@ -2,34 +2,34 @@
 Este projeto foi desenvolvido utilizando Cucumber, HTTParty e WebDriver frameworks para automação de back-end.
 
 ## Passo 1:
-
 Instalar:
-* Ruby 2.5.5 e DevKit (https://rubyinstaller.org/downloads/)
-* Bundler ($ gem install bundler)
+<blockquote>Ruby 2.5.5 e DevKit (https://rubyinstaller.org/downloads/)</blockquote>
+<blockquote>Bundler ($ gem install bundler)</blockquote>
 
 ## Passo 2:
 Clonar o projeto:
-
-    * $ git clone
+    <blockquote>$ git clone git@github.com:joicequeiroz/desafio-qa.git</blockquote>
 
 ## Passo 3:
 Após clonar o projeto, vai até o diretório raíz do projeto e execute o seguinte comando:
-    * $ bundle install
+    <blockquote>$ bundle install</blockquote>
 
 ## Exemplo para rodar os testes:
 Para rodar todos os cenários, execute o seguinte comando:
-    * $ cucumber
+    <blockquote>$ cucumbert</blockquote>
 
 Para rodar cenários específicos por funcionalidade, como Relatórios, execute o seguinte comando:
-    * $ cucumber --tag @relatorio
+    <blockquote>$ cucumber --tag @relatorio</blockquote>
 
-* Após a execução dos testes, os resultados são armazenados em ..\desafios-qa\log\report.html
+#### Após a execução dos testes, os resultados são armazenados em ..\desafios-qa\log\report.html
 
 ## Pontos de Atenção:
-1 - Status Code:
+**1. Status Code**
+
 Os códigos de status das respostas HTTP indicam se uma requisição HTTP foi corretamente concluída. As respostas são agrupadas em cinco classes: respostas de informações, respostas de sucesso, redirecionamento, erro do cliente e erros do servidor.
 
 Idealmente o status code 200 é utilizado para:
+
 Requisição bem sucedida. O significado do sucesso varia de acordo com o método HTTP:
 GET: O recurso foi buscado e transmitido no corpo da mensagem.
 HEAD: Os cabeçalhos da entidade estão no corpo da mensagem.
@@ -43,17 +43,17 @@ Quando não há conteúdo para enviar para esta solicitação, mas os cabeçalho
 
 No caso de cenários onde não é informado um dos campos obrigatórios, o ideal é o retorno do status 204 e não o status 400 - Bad Request, que significa que o servidor não entendeu a requisição pois está com uma sintaxe inválida.
 
-2- Documentação:
+**2. Documentação:**
+
 De acordo com a documentação disponível em: https://docs.idwall.co/docs/listing-reports, é possível filtrar relatórios informando os dados no body na requisição, como por exemplo:
-curl -G https://api-v2.idwall.co/relatorios
--H "Content-Type: application/x-www-form-urlencoded"
--H 'Authorization:seu-token'
--d "tipo_pessoa=Pessoa_ou_Empresa"
+![Screenshot_27](https://user-images.githubusercontent.com/29778062/65064817-919edb00-d957-11e9-996c-11e7e0e288a1.png)
 
 Porém, a requisição não funciona dessa forma, para montar uma requisição que realmente faça o filtro, é necessario informar 
+``` 
 curl -G https://api-v2.idwall.co/relatorios?page=1&rows=25&tipo_pessoa=Pessoa
 -H "Content-Type: application/x-www-form-urlencoded"
 -H 'Authorization:seu-token'
+```
 
 É necessário atualizar a documentação no site para não prejudicar os testes dos demais canditados.
 
