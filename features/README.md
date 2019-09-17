@@ -16,7 +16,7 @@ Após clonar o projeto, vai até o diretório raíz do projeto e execute o segui
 
 ## Exemplo para rodar os testes:
 Para rodar todos os cenários, execute o seguinte comando:
-    <blockquote>$ cucumbert</blockquote>
+    <blockquote>$ cucumber</blockquote>
 
 Para rodar cenários específicos por funcionalidade, execute o seguinte comando:
 
