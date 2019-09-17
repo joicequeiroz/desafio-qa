@@ -1,4 +1,4 @@
-### Pontos Gerais
+# Pontos Gerais
 
 ## Um pouco da história...
 Quando se fala de ciclo de vida de desenvolvimento de software, vimos modelos como Cascata, Modelo em V, Incremental, Evolutivo, RAD, Prototipagem, Espiral, RUP e diversos outros que surgiram e minguaram. Uma característica comum entre esse modelo, é a grande quantidade de documentação como: casos de uso, diagramas de classe, sequência, atividade, processo e outros, mas muito voltado para o desenvolvedor e a forma de desenvolvimento.
@@ -45,24 +45,24 @@ Frequentemente, antes de iniciar a automação, os testes devem ser re-projetado
 
 Na prática, a automação de 100% dos testes manuais nem sempre é a melhor estratégia. A automação de testes é pouco eficaz quando os testes são complexos e exigem interações intersistemas ou validações subjetivas (estes tipos de testes devem permanecer manuais). Além disso, muitas vezes o custo e o tempo para automatizar os testes de um projeto são maiores que o custo e o tempo do próprio projeto de desenvolvimento (o que inviabilizaria a automação de 100% dos testes manuais).
 
-# Métricas de Qualidade
+## Métricas de Qualidade
 Avaliar a qualidade de um software é um minstério. Muitos profissionais de TI ficam frustrados sobre como definir a qualidade das aplicações. Não surpreendentemente, essas dificuldades resultam de um foco incorreto sobre o processo pelo qual o software foi construido. De nada adianta ter um processo impecável se o produto não estiver na linha. Infelizmente, esse é o tipo de falha que corremos o risco quando não somos capazes de medir a qualidade de software.
 Um software bem concebido, bem arquitetado e bem executado possui alta qualidade. É fácil trabalhar com ele, mantê-lo para suprir as demandas do negócio.  
 Listaremos 5 pontos para medir a qualidade:
 
-* 1 - Alcance:
+**1. Alcance:**
 Deve ser capaz de lidar com várias tecnologias. A maioria dos aplicativos modernos contém vários idiomas e sistemas que são ligados entre si de forma complexa.
 
-* 2 - Profundidade: 
+**2. Profundidade:**
 Deve ser capaz de gerar mapas completos e detalhados da arquitetura do aplicativo do Graphical User Interface (GUI), ferramenta de captura, processamento e análise de imagem, para o banco de dados. Sem essa detalhada arquitetura, seria impossível obter contextualização da aplicação.
 
-* 3 - Tornar o conhecimento explícito de engenharia de software: 
+**3. Tornar o conhecimento explícito de engenharia de software:**
 Deve ser capaz de verificar a aplicação inteira contra centenas de padrões de implementação que codificam as melhores práticas de engenharia.
 
-* 4 - Métricas acionáveis: 
+**4. Métricas acionáveis:**
 As métricas de qualidade não devem apenas informar, mas também orientar sobre como realizar a melhoria da qualidade do software, mostrando o que fazer primeiro, como fazê-lo, próximos passos etc.
 
-* 5 - Automatização: 
+**5. Automatização:**
 Finalmente, deve ser capaz de realizar todos os pontos descritos acima de forma automatizada. Nenhum profissional ou equipe pode fazer essa tarefa, muito menos fazê-la em um curto espaço de tempo.
 
 ## Conclusão
